@@ -23,10 +23,10 @@ export class QuoteDetailComponent implements OnInit {
   ngOnInit(): void {
   }
   upvote(){
-    this.quoteUp.likes+=1;
+    this.quote.likes+=1;
   }
   downvote(){
-    this.quoteDown.dislikes+=1;
+    this.quote.dislikes+=1;
   }
 
 }
