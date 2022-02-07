@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Quotes } from '../quotes';
+import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-quote-detail',
@@ -7,6 +8,7 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quote-detail.component.css']
 })
 export class QuoteDetailComponent implements OnInit {
+  faThumbsup = faThumbsUp;
 
   @Input() quote!: Quotes;
   @Input() quoteUp!: Quotes;
