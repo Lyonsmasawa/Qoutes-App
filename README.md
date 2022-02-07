@@ -58,3 +58,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Reach out to me at this address [lyonsmasawa@gmail.com]
 
 ## License
+MIT license[https://github.com/Lyonsmasawa/Qoutes-App/blob/d75160ce7805874350c8597fd966589ba354bb1b/LICENSE]
