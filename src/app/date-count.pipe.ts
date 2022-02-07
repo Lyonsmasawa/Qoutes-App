@@ -18,7 +18,7 @@ export class DateCountPipe implements PipeTransform {
     if (dateCounter >= 1 && todayWithNoTime > value){
         return Math.floor(dateCounter);
     }else{
-        return - "days old";
+        return 0;
     }
   }
 }

@@ -9,6 +9,8 @@ import { Quotes } from '../quotes';
 export class QuoteDetailComponent implements OnInit {
 
   @Input() quote!: Quotes;
+  @Input() quoteUp!: Quotes;
+  @Input() quoteDown!: Quotes;
   @Output() isComplete = new EventEmitter<boolean>();
 
   quoteDelete(complete:boolean){
@@ -17,6 +19,12 @@ export class QuoteDetailComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+  upvote(){
+    this.quoteUp.likes+=1;
+  }
+  downvote(){
+    this.quoteDown.dislikes+=1;
   }
 
 }
