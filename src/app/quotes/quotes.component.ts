@@ -9,9 +9,9 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
 
   quotes: Quotes[] = [
-    new Quotes(1, '“Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.', '― Neil Gaiman, Coraline ',new Date(1999,10,23)),
-    new Quotes(2,`“Listen to the mustn'ts, child. Listen to the don'ts. Listen to the shouldn'ts, the impossibles, the won'ts. Listen to the never haves, then listen close to me... Anything can happen, child. Anything can be.” `,' ― Shel Silverstein ',new Date(2022,1,24)),
-    new Quotes(3,`“You may say I'm a dreamer, but I'm not the only one. I hope someday you'll join us. And the world will live as one.”`,' ― John Lennon ',new Date(2012,3,2)),
+    new Quotes(1, '“Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.', '― Neil Gaiman, Coraline ', "Joy", new Date(1999,10,23)),
+    new Quotes(2,`“Listen to the mustn'ts, child. Listen to the don'ts. Listen to the shouldn'ts, the impossibles, the won'ts. Listen to the never haves, then listen close to me... Anything can happen, child. Anything can be.” `,' ― Shel Silverstein ', "Lyons",new Date(2022,1,24)),
+    new Quotes(3,`“You may say I'm a dreamer, but I'm not the only one. I hope someday you'll join us. And the world will live as one.”`,' ― John Lennon ',"Christine", new Date(2012,3,2)),
   ];
 
   addNewquote(quote: Quotes){
