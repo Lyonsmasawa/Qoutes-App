@@ -7,7 +7,7 @@
         <div *ngFor='let quote of quotes;let i = index'>
           <br>
           <div>
-            <h6 id={{i}} appHighlight>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h6>
+            <h6 id={{i}} appHighlight>{{quote.name}}</h6>
             <button (click)='seeDetails(i)' class="btn btn-primary">Toggle Details</button>
           </div>
   

@@ -1,3 +1,4 @@
+import { invalid } from '@angular/compiler/src/render3/view/util';
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
@@ -6,18 +7,18 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class DateCountPipe implements PipeTransform {
 
   transform(value: any): number {
-    let today:Date = new Date(); 
-    let todayWithNoTime:any = new Date(today.getFullYear(), today.getMonth(), today.getDate())
-    var dateDifference = Math.floor(value - todayWithNoTime)
-    const secondsInDay = 86400; 
-    var dateDifferenceSeconds = dateDifference*0.001; 
-    var dateCounter = dateDifferenceSeconds/secondsInDay;
+    let today:Date = new Date();
+    let todayWithNoTime:any = new Date(today.getFullYear(),today.getMonth(),today.getDate())
+    var dateDifference =Math.round(todayWithNoTime - value)
+    const secondsInADay= 86400;
 
-    if (dateCounter >= 1 && value > todayWithNoTime){
-      return dateCounter;
+    var dateDifferenceSeconds=dateDifference*0.001; 
+    var dateCounter = dateDifferenceSeconds/secondsInADay;
+
+    if (dateCounter >= 1 && todayWithNoTime > value){
+        return Math.floor(dateCounter);
     }else{
-      return 0;
+        return - "days old";
     }
   }
-
 }
