@@ -3,7 +3,7 @@
     <hr>
   
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-5 cardx ">
         <div *ngFor='let quote of quotes;let i = index'>
           <br>
           <div>
@@ -15,7 +15,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-5 cardx part">
         <app-quotes-form (addquote)="addNewquote($event)"></app-quotes-form>
       </div>
     </div>
