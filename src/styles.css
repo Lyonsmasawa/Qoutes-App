@@ -11,3 +11,16 @@
      transition: all .3s linear;
  }
  
+ html {
+     overflow-x: hidden;
+ }
+ 
+ body {
+     background: black;
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     flex-direction: column;
+ }
