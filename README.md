@@ -9,7 +9,7 @@ This is an Angular cli application, It allows the user to input new quote for ot
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
 ## Live Page 
-https://
+click here to view the site [https://lyonsmasawa.github.io/Qoutes-App/]
 
 ## Development server
 
