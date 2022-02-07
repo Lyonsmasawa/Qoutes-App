@@ -1,5 +1,4 @@
 <br>
-<p>{{quote.description}}</p><button class="btn btn-sm btn-success" (click)='upvote()'>{{quoteUp.likes}} <i class="fa fa-thumbs-up" id="like"></i> </button>  
-<button class="btn btn-sm btn-danger" id="notLike" (click)='downvote()'>{{quoteDown.dislikes}} <i class="fa fa-thumbs-down" id="dislike"></i> </button> 
+<p>{{quote.description}}</p>
 <p>posted on {{quote.completeDate|date}} by {{quote.person}}, making it {{quote.completeDate|dateCount}} days old</p>
 <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete</button>
