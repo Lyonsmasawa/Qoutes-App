@@ -1,6 +1,15 @@
 # QuotesApp
 
+## A peek of the page
+<img src="pro1.png">
+
+## Description
+
+This is an Angular cli application, It allows the user to input new quote for other user to read, upvote a quote , downvote and also delete a quote. 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
+
+## Live Page 
+https://
 
 ## Development server
 
@@ -25,3 +34,27 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Installation / Setup instruction
+
+* git clone from this link (https://github.com/Lyonsmasawa/Goals.git)
+
+* Edit to your satisfaction
+
+## Technologies Used
+
+* HTML5
+* CSS
+* AngulerCLI
+* markdown
+* Bootstrap 
+
+## Known Bugs
+* No Known bugs yet
+
+## Contact Information 
+
+Reach out to me at this address [lyonsmasawa@gmail.com]
+
+## License
